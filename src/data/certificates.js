@@ -1,0 +1,1 @@
+export const certificates = [{ id: 1, title: 'C++ Essentials 1', organization: 'Cisco Networking Academy / Virtual University Campus, Islamabad', description: 'Completed a foundational C++ programming course covering core programming concepts, problem-solving, program structure, and essential C++ development skills.' }];

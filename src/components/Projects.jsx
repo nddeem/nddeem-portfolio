@@ -1,0 +1,6 @@
+import { ArrowUpRight, Info } from 'lucide-react';
+import SectionHeading from './SectionHeading';
+import Reveal from './Reveal';
+import { projects } from '../data/projects';
+
+export default function Projects(){return <section id="projects" className="section projects"><div className="section-index">03</div><SectionHeading eyebrow="Demo portfolio projects" title={<>Professional concepts<br/><span>built with purpose.</span></>} copy="Three demonstration projects that show how I approach modern, responsive interface design."/><div className="project-grid">{projects.map((project,index)=><Reveal className={`project-card glass-card accent-${project.accent}`} delay={index*.08} key={project.id}><div className="project-visual"><img src={project.image} alt={`${project.title} preview`}/></div><div className="project-body"><span className="placeholder-badge">Portfolio concept</span><h3>{project.title}</h3><p>{project.description}</p><div className="tech-list">{project.technologies.map(technology=><span key={technology}>{technology}</span>)}</div><blockquote>{project.review}</blockquote><div className="project-links"><a href={project.image} target="_blank" rel="noreferrer"><Info/> View Details</a><a href={project.image} target="_blank" rel="noreferrer">Live Demo <ArrowUpRight/></a></div></div></Reveal>)}</div></section>}

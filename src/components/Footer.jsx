@@ -1,0 +1,2 @@
+import { ArrowUp, GitBranch as Github, BriefcaseBusiness as Linkedin } from 'lucide-react';import { siteData } from '../data/siteData';
+export default function Footer(){return <footer><a className="brand" href="#home"><span>N</span>Nddeem</a><p>© {new Date().getFullYear()} Nddeem. Built with React and creativity.</p><div className="footer-links"><a href={siteData.github} aria-label="GitHub"><Github/></a><a href={siteData.linkedin} aria-label="LinkedIn"><Linkedin/></a><a href="#home" aria-label="Back to top"><ArrowUp/></a></div></footer>}
